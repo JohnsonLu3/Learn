@@ -33,3 +33,7 @@ The base app component or root component can be found in src/app/app.component.h
 ## Styling
 Using src/app/style.scss you can apply global styling thats is used across all files.
 For individual styling you have to use the associated scss file for that component.
+
+
+## NgModules
+Addition modules can be imported in the src/app/app.module.ts file.
