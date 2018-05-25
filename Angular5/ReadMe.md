@@ -1,5 +1,6 @@
 # Angular 5
-===================
+
+
 ## Creating a new project
 ```
 ng new my-app
@@ -25,3 +26,10 @@ ng generate component home
 or
 ng g c about
 ```
+
+Every component will have a html, style, and typescript file when generated.
+The base app component or root component can be found in src/app/app.component.html
+
+## Styling
+Using src/app/style.scss you can apply global styling thats is used across all files.
+For individual styling you have to use the associated scss file for that component.
