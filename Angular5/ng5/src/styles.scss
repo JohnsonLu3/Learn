@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+$background : #e6eeee;
+
 body{
-    background-color: #e6eeee;
+    background-color: $background;
+}
+
+.shadow{
+    -webkit-box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.36);
+    -moz-box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.36);
+    box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.36);
+}
+
+.card{
+    margin: 2rem 5rem 2rem 5rem;
+    padding: 3.5rem;
 }

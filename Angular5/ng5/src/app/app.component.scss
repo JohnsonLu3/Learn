@@ -1,7 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+$primary : #ff717b;
+$highlight: #e1131d;
+$hover : #00a6a0;
+$light : white;
+$dark : black;
+
 .navbar{
-    background-color: #00738c;
+    
+    padding: 0 1rem 0 1rem;
+    height: 4rem;
+    a{
+        color: $dark;
+        font-size: 1.4rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+}
+
+.navbar-brand{
+    padding-left: 5rem;
+    padding-top: 1rem;
+    p{
+        font-size: 2.5rem;
+    }
+}
+
+.navbar-nav{
+    position: absolute; 
+    right: 5rem;
+    top: 1.4rem;
 
     a{
-        color: white;
+        padding-left: 4rem;
     }
+
+    :hover{
+         color: $hover;
+    }
+}
+
+.nav-item:hover{
+         + #tabHighlight{
+            position: inherit;
+            z-index: -1;
+            height: 3.5rem;
+            width: 7rem;
+            background-color: $light;
+         }
 }
