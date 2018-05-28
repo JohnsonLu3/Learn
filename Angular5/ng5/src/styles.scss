@@ -17,3 +17,33 @@ body{
     margin: 2rem 5rem 2rem 5rem;
     padding: 3.5rem;
 }
+
+.slide-right{
+    animation-name: slideFromRight;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-out;
+}
+
+.slide-left{
+    animation-name: slideFromLeft;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideFromRight{
+    from{
+        transform: translateX(120%)
+    }
+    to {
+        transform: translateX(0%)
+    }
+}
+
+@keyframes slideFromLeft{
+    from{
+        transform: translateX(-120%)
+    }
+    to {
+        transform: translateX(0%)
+    }
+}
