@@ -26,15 +26,18 @@ import { DataService } from './data.service';
 export class AppComponent {
   title = 'app';
   links = [];
-  state: string = 'bottom'
+  state = [];
 
   constructor(private _data: DataService){}
 
   ngOnInit(){
     this._data.links.subscribe(res => this.links = res);
+    this.state = new Array(this.links.length).fill("bottom");
+    console.log(this.state);
   }
 
-  playAnim(){
-    this.state = (this.state === 'bottom' ? 'top' : 'bottom');
+  playAnim(i){
+    console.log(i);
+    this.state[i] = (this.state[i] === 'bottom' ? 'top' : 'bottom');
   }
 }

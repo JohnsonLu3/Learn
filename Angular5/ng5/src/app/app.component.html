@@ -6,8 +6,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <span *ngFor='let link of links'>
-      <a class="nav-item nav-link" href={{link.url}} [@pop]='state' (mouseenter)="playAnim()" (mouseleave)= "playAnim()"> 
+      <span *ngFor='let link of links; let i = index'>
+      <a class="nav-item nav-link" href={{link.url}} [@pop]="state[i]" (mouseenter)="playAnim(i)" (mouseleave)= "playAnim(i)"> 
         <i class={{link.ico}}></i> {{link.name}}
         </a>
       </span>
