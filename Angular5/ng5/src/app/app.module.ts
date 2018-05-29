@@ -11,8 +11,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectShowcaseComponent } from './project-showcase/project-showcase.component';
 import { WebpageShowcaseComponent } from './webpage-showcase/webpage-showcase.component';
-import { GameControllerComponent } from './game-controller/game-controller.component';
-import { WebSvgComponent } from './web-svg/web-svg.component';
+import { GameControllerComponent } from './svg/game-controller/game-controller.component';
+import { WebSvgComponent } from './svg/web-svg/web-svg.component';
+import { FloppyComponent } from './svg/floppy/floppy.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WebSvgComponent } from './web-svg/web-svg.component';
     ProjectShowcaseComponent,
     WebpageShowcaseComponent,
     GameControllerComponent,
-    WebSvgComponent
+    WebSvgComponent,
+    FloppyComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+svg:hover{
+
+    .clip{
+        animation-name: slide; 
+        animation-duration: 2s;
+        transform: translateX(1.5rem);
+    }
+
+    .disk{
+        // animation-name: rotate; 
+        // animation-duration: 2s; 
+        // animation-iteration-count: infinite;
+        // animation-timing-function: linear;
+    }
+}
+
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(1.5rem);
+    }
+}
+
+@keyframes rotate{
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
