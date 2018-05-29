@@ -1,0 +1,28 @@
+.games{
+    height: 25rem;
+
+}
+
+.gamesSection{
+
+    transform: rotate(10deg);
+    
+    :hover{
+        animation-name: game;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-out;
+        transform: translateY(-15%)
+        translateX(-8%);
+    } 
+}
+
+@keyframes game{
+    from{
+        transform: translateY(0%)
+        translateX(0%);
+    }
+    to {
+        transform: translateY(-15%)
+        translateX(-8%);
+    }
+}

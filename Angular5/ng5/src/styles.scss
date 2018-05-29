@@ -7,6 +7,11 @@ body{
     background-color: $background;
 }
 
+.container{
+    margin: 0rem !important;
+    padding: 0rem !important;
+}
+
 .shadow{
     -webkit-box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.36);
     -moz-box-shadow: 10px 10px 14px -11px rgba(0,0,0,0.36);
@@ -14,7 +19,7 @@ body{
 }
 
 .card{
-    margin: 2rem 5rem 2rem 5rem;
+    margin: 2rem 2rem 2rem 2rem;
     padding: 3.5rem;
 }
 
