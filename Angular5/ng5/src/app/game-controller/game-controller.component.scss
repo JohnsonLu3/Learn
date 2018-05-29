@@ -1,0 +1,41 @@
+.Start-Button:hover{
+    animation-name: shortpress;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+} 
+
+.Select-Button:hover{
+    animation-name: shortpress;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+} 
+
+ .B-Button:hover{
+    animation-name: press;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+} 
+
+ .A-Button:hover{
+    animation-name: press;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;   
+} 
+
+@keyframes press{
+    from{
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(2px)
+    }
+}
+
+@keyframes shortpress{
+    from{
+        transform: translateY(0)
+    }
+    to {
+        transform: translateY(1px)
+    }
+}

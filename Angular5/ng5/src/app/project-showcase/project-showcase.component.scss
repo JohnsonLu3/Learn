@@ -1,5 +1,4 @@
 .gamesSVG{
-    height: 10rem;
     float: right; 
 }
 
@@ -8,26 +7,40 @@
     float: right; 
 }
 
-.gamesSection{
+hr{
+    margin-right: 30vw;
+}
 
-    transform: rotate(10deg);
+h1{
+     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.webappsSection{
     
-    :hover{
-        animation-name: game;
+    i{
+        position: absolute;
+        bottom: 5rem;
+        right: 4rem;
+    }
+
+    :hover + i{
+        animation-name: mouse;
         animation-duration: 1.2s;
         animation-timing-function: ease-out;
-        transform: translateY(-15%)
-        translateX(-8%);
-    } 
+        transform: translateY(-7.5rem)
+        translateX(-4rem);
+    }
+
+    @keyframes mouse{
+        from{
+            transform: translateY(0rem)
+            translateX(0rem);
+        }
+        to {
+            transform: translateY(-7.5rem)
+            translateX(-4rem);
+        }
+    }
 }
 
-@keyframes game{
-    from{
-        transform: translateY(0%)
-        translateX(0%);
-    }
-    to {
-        transform: translateY(-15%)
-        translateX(-8%);
-    }
-}
+

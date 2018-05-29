@@ -1,0 +1,22 @@
+svg:hover{
+
+    .cursor{
+        animation-name: mouse;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;   
+        transform: translateY(-2.4rem)
+        translateX(-2rem);
+    }
+}
+
+
+@keyframes mouse{
+    from{
+        transform: translateY(0)
+        translateX(0);
+    }
+    to {
+        transform: translateY(-2.4rem)
+        translateX(-2rem);
+    }
+}

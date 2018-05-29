@@ -11,6 +11,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectShowcaseComponent } from './project-showcase/project-showcase.component';
 import { WebpageShowcaseComponent } from './webpage-showcase/webpage-showcase.component';
+import { GameControllerComponent } from './game-controller/game-controller.component';
+import { WebSvgComponent } from './web-svg/web-svg.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { WebpageShowcaseComponent } from './webpage-showcase/webpage-showcase.co
     SkillsComponent,
     FooterComponent,
     ProjectShowcaseComponent,
-    WebpageShowcaseComponent
+    WebpageShowcaseComponent,
+    GameControllerComponent,
+    WebSvgComponent
   ],
   imports: [
     BrowserModule,
