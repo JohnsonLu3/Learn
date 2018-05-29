@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BioComponent } from './bio/bio.component';
+import { SkillsComponent } from './skills/skills.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    BioComponent
+    BioComponent,
+    SkillsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

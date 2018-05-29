@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 $background : #e6eeee;
 
@@ -20,13 +20,13 @@ body{
 
 .slide-right{
     animation-name: slideFromRight;
-    animation-duration: 1.4s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-out;
 }
 
 .slide-left{
     animation-name: slideFromLeft;
-    animation-duration: 1.4s;
+    animation-duration: 1.2s;
     animation-timing-function: ease-out;
 }
 

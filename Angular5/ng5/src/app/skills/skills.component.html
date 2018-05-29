@@ -1,0 +1,11 @@
+<div class="card shadow slide-left">
+  <h1> Skills </h1>
+  <hr />
+  <div class="row">
+    <div class="col-12">
+        <span *ngFor="let skill of skills">
+          <i class={{skill.ico}}  data-toggle="tooltip" data-placement="top" title={{skill.id}}></i> 
+        </span>
+    </div>
+  </div>
+</div>
