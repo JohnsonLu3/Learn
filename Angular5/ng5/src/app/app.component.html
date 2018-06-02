@@ -7,9 +7,16 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <span *ngFor='let link of links; let i = index'>
-      <a class="nav-item nav-link" href={{link.url}} [@pop]="state[i]" (mouseenter)="playAnim(i)" (mouseleave)= "playAnim(i)"> 
-        <i class={{link.ico}}></i> {{link.name}}
-        </a>
+        <span *ngIf="!link.external; else externalLink">
+            <a class="nav-item nav-link" routerLink={{link.url}} [@pop]="state[i]" (mouseenter)="playAnim(i)" (mouseleave)= "playAnim(i)"> 
+              <i class={{link.ico}}></i> {{link.name}}
+            </a>  
+        </span>
+        <ng-template #externalLink>
+            <a class="nav-item nav-link" href={{link.url}} [@pop]="state[i]" (mouseenter)="playAnim(i)" (mouseleave)= "playAnim(i)"> 
+              <i class={{link.ico}}></i> {{link.name}}
+            </a>  
+        </ng-template> 
       </span>
     </div>
   </div>

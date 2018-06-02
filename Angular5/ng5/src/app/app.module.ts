@@ -14,7 +14,6 @@ import { WebpageShowcaseComponent } from './webpage-showcase/webpage-showcase.co
 import { GameControllerComponent } from './svg/game-controller/game-controller.component';
 import { WebSvgComponent } from './svg/web-svg/web-svg.component';
 import { FloppyComponent } from './svg/floppy/floppy.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { WebappPageComponent } from './webapp-page/webapp-page.component';
 import { ArduinoPageComponent } from './arduino-page/arduino-page.component';
@@ -31,7 +30,6 @@ import { ArduinoPageComponent } from './arduino-page/arduino-page.component';
     GameControllerComponent,
     WebSvgComponent,
     FloppyComponent,
-    ProjectsComponent,
     ProjectPageComponent,
     WebappPageComponent,
     ArduinoPageComponent
