@@ -1,3 +1,18 @@
-<p>
-  project-page works!
-</p>
+<div class="card center">
+  <h1>
+    Projects
+  </h1>
+</div>
+
+<div class="card">
+  <h2>Web Apps</h2>
+
+  <div *ngFor="let proj of webapp">
+      <ul>
+      <span *ngFor="let details of proj.Details">
+        <li>{{details}}</li>
+      </span>
+      </ul>
+  </div>
+  
+</div>
