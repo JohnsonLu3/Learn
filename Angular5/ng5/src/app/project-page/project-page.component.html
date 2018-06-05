@@ -6,37 +6,37 @@
 
 <div class="card">
   <h2 class="sectionHeader">Web Apps</h2>
-  <div class="container">
     <div *ngFor="let proj of webapp">
-        <div class="row proj">
-              <div class="col-6"> 
-                <h2>{{proj.Name}}</h2>
-                
-                <ul class="languages">
-                  <span *ngFor="let ico of proj.languages">
-                      <li><i class={{ico}}></i></li>
-                  </span>
-                </ul>
+        <div class="container">
+          <div class="row proj">
+                <div class="col-6"> 
+                  <h2>{{proj.Name}}</h2>
+                  
+                  <ul class="languages">
+                    <span *ngFor="let ico of proj.languages">
+                        <li><i class={{ico}}></i></li>
+                    </span>
+                  </ul>
 
-                <ul>
-                <span *ngFor="let details of proj.Details">
-                  <li>{{details}}</li>
-                </span>
-                </ul>
-              </div>
-              <div class="col-6">
-                  <img src="../assets/img/projects/{{proj.Img}}"/>
-              </div>
-        </div>
-    </div>
+                  <ul>
+                  <span *ngFor="let details of proj.Details">
+                    <li>{{details}}</li>
+                  </span>
+                  </ul>
+                </div>
+                <div class="col-6">
+                    <img src="../assets/img/projects/{{proj.Img[0]}}"/>
+                </div>
+          </div>
+      </div>
   </div>
 </div>
 
 
 <div class="card">
   <h2 class="sectionHeader">Software</h2>
-  <div class="container">
     <div *ngFor="let proj of software">
+        <div class="container">
         <div class="row proj">
               <div class="col-6"> 
                 <h2>{{proj.Name}}</h2>
@@ -54,7 +54,7 @@
                 </ul>
               </div>
               <div class="col-6">
-                  <img src="../assets/img/projects/{{proj.Img}}"/>
+                  <img src="../../assets/img/projects/{{proj.Img[0]}}"/>
               </div>
         </div>
     </div>
@@ -65,8 +65,8 @@
 
 <div class="card">
   <h2 class="sectionHeader">Games</h2>
-  <div class="container">
     <div *ngFor="let proj of games">
+        <div class="container">
         <div class="row proj">
               <div class="col-6"> 
                 <h2>{{proj.Name}}</h2>
@@ -84,7 +84,7 @@
                 </ul>
               </div>
               <div class="col-6">
-                  <img src="../assets/img/projects/{{proj.Img}}"/>
+                  <img src="../assets/img/projects/{{proj.Img[0]}}"/>
               </div>
         </div>
     </div>
