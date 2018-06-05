@@ -11,7 +11,12 @@
         <div class="container">
           <div class="row proj">
                 <div class="col-6"> 
-                  <h2>{{proj.Name}}</h2>
+                  <span *ngIf="proj.SourceLink != null;else elseBlock">
+                    <h2><a href={{proj.SourceLink}}>{{proj.Name}}</a></h2>
+                  </span>
+                  <ng-template #elseBlock>
+                    <h2><a href={{proj.Visit}}>{{proj.Name}}</a></h2>
+                  </ng-template>
                   
                   <ul class="languages">
                     <span *ngFor="let ico of proj.languages">
@@ -41,7 +46,12 @@
         <div class="container">
         <div class="row proj">
               <div class="col-6"> 
-                <h2>{{proj.Name}}</h2>
+                  <span *ngIf="proj.SourceLink != null;else elseBlock">
+                    <h2><a href={{proj.SourceLink}}>{{proj.Name}}</a></h2>
+                  </span>
+                  <ng-template #elseBlock>
+                    <h2><a href={{proj.Visit}}>{{proj.Name}}</a></h2>
+                  </ng-template>
                 
                 <ul class="languages">
                   <span *ngFor="let ico of proj.languages">
@@ -72,7 +82,12 @@
         <div class="container">
         <div class="row proj">
               <div class="col-6"> 
-                <h2>{{proj.Name}}</h2>
+                  <span *ngIf="proj.SourceLink != null;else elseBlock">
+                    <h2><a href={{proj.SourceLink}}>{{proj.Name}}</a></h2>
+                  </span>
+                  <ng-template #elseBlock>
+                    <h2><a href={{proj.Visit}}>{{proj.Name}}</a></h2>
+                  </ng-template>
                 
                 <ul class="languages">
                   <span *ngFor="let ico of proj.languages">

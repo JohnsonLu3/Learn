@@ -70,7 +70,7 @@ const Projects = [
 
     {
         id: "PMT7MTY34F2zCOcufSeE",
-        Name: "Youtube Spoiler Free",
+        Name: "YouTube Spoiler Free",
         Section: Sect.WEBAPP,
         Description: "Don't you get tired when you're trying to share a video with your friends but the video's title and thumbnail spoil it? Well thats what YTSF, YTSpoilerFree is for. Just replace youtube with ytSpoilerFree in the url and boom, spoiler free video to share.",
         Img: [
