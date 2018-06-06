@@ -33,7 +33,6 @@ export class AppComponent {
   ngOnInit(){
     this._data.links.subscribe(res => this.links = res);
     this.state = new Array(this.links.length).fill("bottom");
-    console.log(this.state);
   }
 
   playAnim(i){

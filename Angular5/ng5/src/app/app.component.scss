@@ -41,13 +41,3 @@ $dark : black;
          color: $hover;
     }
 }
-
-.nav-item:hover{
-         + #tabHighlight{
-            position: inherit;
-            z-index: -1;
-            height: 3.5rem;
-            width: 7rem;
-            background-color: $light;
-         }
-}
