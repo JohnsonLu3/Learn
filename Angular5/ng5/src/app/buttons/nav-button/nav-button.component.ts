@@ -20,7 +20,8 @@ export class NavButtonComponent implements OnInit {
   }
 
   scroll(){
-    let ref = document.createElement(this.ref);
-    ref.scrollIntoView({behavior:"smooth"});
+    let el = document.getElementById(this.ref);
+    console.log(el);
+    el.scrollIntoView( {behavior:"smooth", block: "start"});
   }
 }
