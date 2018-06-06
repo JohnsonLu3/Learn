@@ -4,8 +4,21 @@ button{
     border-style: none;
 }
 
+button:focus {outline:0;}
+
+button:hover{
+        animation-name: shift;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+}
+
 i{
     color: white;
     font-size: 1.5em;
     padding: .5em;
+}
+
+@keyframes shift {
+    from { transform: 'translateX(0)'}
+    to {transform: 'translateX(2em)'}
 }

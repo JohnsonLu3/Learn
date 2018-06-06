@@ -13,7 +13,6 @@ export class NavButtonComponent implements OnInit {
   @Input() ico: string;
   @Input() ref: string;
 
-
   constructor() { }
 
   ngOnInit() {

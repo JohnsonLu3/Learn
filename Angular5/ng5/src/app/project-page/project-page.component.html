@@ -112,22 +112,27 @@
 
 <div id="sideNav" class="slide-right-2">
   <ul>
-    <li><app-top-button></app-top-button></li>
-    <li><app-nav-button           
+    <li  [@shift]="state[0]"  (mouseenter)="playAnim(0)" (mouseleave)= "playAnim(0)">
+      <app-top-button></app-top-button>
+    </li>
+    <li  [@shift]="state[1]"  (mouseenter)="playAnim(1)" (mouseleave)= "playAnim(1)">
+      <app-nav-button           
           color = "#ff6760"
           name = "WebApp"
           ico = "fab fa-html5"
           ref = "webapp">
       </app-nav-button>
     </li>
-        <li><app-nav-button           
+    <li  [@shift]="state[2]"  (mouseenter)="playAnim(2)" (mouseleave)= "playAnim(2)">
+      <app-nav-button           
           color = "#92d7ef"
           name = "Software"
           ico = "far fa-save"
           ref = "software">
       </app-nav-button>
     </li>
-        <li><app-nav-button           
+    <li  [@shift]="state[3]"  (mouseenter)="playAnim(3)" (mouseleave)= "playAnim(3)">
+      <app-nav-button           
           color = "#ae301f"
           name = "Game"
           ico = "fas fa-dice-five"

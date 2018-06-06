@@ -36,7 +36,6 @@ export class AppComponent {
   }
 
   playAnim(i){
-    console.log(i);
     this.state[i] = (this.state[i] === 'bottom' ? 'top' : 'bottom');
   }
 }
