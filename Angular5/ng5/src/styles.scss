@@ -29,10 +29,33 @@ body{
     animation-timing-function: ease-out;
 }
 
+.slide-right-2{
+    animation-name: slideFromRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+.slide-right-3{
+    animation-name: slideFromRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+}
+
+.slide-right-4{
+    animation-name: slideFromRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+
+.slide-right-5{
+    animation-name: slideFromRight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
 .slide-left{
     animation-name: slideFromLeft;
     animation-duration: 1.2s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
 }
 
 @keyframes slideFromRight{

@@ -17,6 +17,8 @@ import { FloppyComponent } from './svg/floppy/floppy.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { WebappPageComponent } from './webapp-page/webapp-page.component';
 import { ArduinoPageComponent } from './arduino-page/arduino-page.component';
+import { TopButtonComponent } from './buttons/top-button/top-button.component';
+import { NavButtonComponent } from './buttons/nav-button/nav-button.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { ArduinoPageComponent } from './arduino-page/arduino-page.component';
     FloppyComponent,
     ProjectPageComponent,
     WebappPageComponent,
-    ArduinoPageComponent
+    ArduinoPageComponent,
+    TopButtonComponent,
+    NavButtonComponent
   ],
   imports: [
     BrowserModule,
