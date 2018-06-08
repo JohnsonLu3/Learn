@@ -3,3 +3,14 @@
     Web Pages
   </h1>
 </div>
+
+<div class="card shadow slide-right">
+  <div class="row horz-center">
+      <div *ngFor="let web of webpages">
+              <div class="webpage">
+                  <a href={{web.Link}}><h1>{{web.Name}}</h1></a>
+                  <img src="../../assets/img/web/{{web.Img}}"/>
+              </div>
+      </div>
+  </div>
+</div>

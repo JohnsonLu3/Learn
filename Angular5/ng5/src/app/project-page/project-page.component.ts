@@ -12,10 +12,10 @@ import { trigger,state,style,transition,animate,keyframes } from '@angular/anima
           transform: 'translateX(0)'
         })),
         state('left',style({
-          transform: 'translateX(-1rem)'
+          transform: 'translateX(-1.5rem)'
         })),
 
-        transition('right => left', animate('400ms ease-in')),
+        transition('right => left', animate('200ms ease-in')),
         transition('left => right', animate('400ms ease-in'))
       ]),
     ]

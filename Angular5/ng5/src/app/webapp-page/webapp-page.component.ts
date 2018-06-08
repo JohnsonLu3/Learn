@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-webapp-page',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WebappPageComponent implements OnInit {
 
-  constructor() { }
+  webpages = [];
+
+  constructor(private _data: DataService) { }
 
   ngOnInit() {
+     this._data.webpages.subscribe(res => this.webpages = res);
   }
 
 }
