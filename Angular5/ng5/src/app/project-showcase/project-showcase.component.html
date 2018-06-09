@@ -1,13 +1,13 @@
 <div class="card shadow slide-right" #webapp>
 
   <div class="row">
-      <div class="col-12"><h1>Web Apps</h1></div>
+      <div class="col-12"><a routerLink="/Projects"><h1>Web Apps</h1></a></div>
   </div>
   <hr />
   <div class="row">
       <div *ngFor="let web of webappData" class="showcase">
               <div class="showcase-img">
-                <!--background: url(../../assets/img/projects/{{web.Img[0]}})-->
+                <a href={{web.SourceLink}}><img src="../../assets/img/projects/{{web.Img[0]}}"/></a>
               </div>
       </div>
   </div>
@@ -17,11 +17,15 @@
 <div class="card shadow slide-right" #software>
 
   <div class="row">
-      <div class="col-12"><h1>Software</h1></div>
+      <div class="col-12"><a routerLink="/Projects"><h1>Software</h1></a></div>
   </div>
   <hr />
   <div class="row">
-
+      <div *ngFor="let software of softwareData" class="showcase">
+              <div class="showcase-img">
+                <a href={{software.SourceLink}}><img src="../../assets/img/projects/{{software.Img[0]}}"/></a>
+              </div>
+      </div>
   </div>
  
 </div>
@@ -29,12 +33,14 @@
 <div class="card shadow slide-right" #game>
 
   <div class="row">
-      <div class="col-12"><h1>Games</h1></div>
+      <div class="col-12"><a routerLink="/Projects"><h1>Games</h1></a></div>
   </div>
   <hr />
   <div class="row">
-      <div class="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div *ngFor="let game of gamesData" class="showcase">
+              <div class="showcase-img">
+                <a href={{game.SourceLink}}><img src="../../assets/img/projects/{{game.Img[0]}}"/></a>
+              </div>
       </div>
   </div>
  
