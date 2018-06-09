@@ -44,3 +44,14 @@ h1{
 }
 
 
+.showcase{
+    .showcase-img{
+        height: 12rem;
+        width: 22rem;
+        background-size: cover;
+        background: url(http://via.placeholder.com/350x150);
+    }
+
+    -webkit-transform: skewX(-12deg);
+    transform: skewX(-12deg);
+}

@@ -101,7 +101,7 @@ const Projects = [
         ],
         SourceLink: "https://github.com/JohnsonLu3/Gerrymandering-Analysis",
         Visit: null,
-        ShowCase: true,
+        ShowCase: false,
         languages:[
             Lang.JAVA,
             Lang.MYSQL,
@@ -171,7 +171,7 @@ const Projects = [
         ],
         SourceLink: "https://github.com/JohnsonLu3/PhaseShifter",
         Visit: "https://johnsonlu3.github.io/PhaseShifter/",
-        ShowCase: false,
+        ShowCase: true,
         languages:[
             Lang.JS
         ],
@@ -216,7 +216,7 @@ const Projects = [
         ],
         SourceLink: "https://github.com/JohnsonLu3/SpectrumAnalyzer",
         Visit: null,
-        ShowCase: false,
+        ShowCase: true,
         languages:[
             Lang.JAVA
         ],
@@ -238,7 +238,7 @@ const Projects = [
         ],
         SourceLink: "https://github.com/JohnsonLu3/SuperRPSFightersDeluxe",
         Visit: null,
-        ShowCase: false,
+        ShowCase: true,
         languages:[
             Lang.CSHARP
         ],
